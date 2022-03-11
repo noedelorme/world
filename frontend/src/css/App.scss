@@ -1,0 +1,55 @@
+.list{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.continent{
+    margin-bottom: 30px;
+    .continent-name{
+        font-size: 25px;
+        color: #fff;
+        background: #333;
+        padding: 8px 10px;
+        border-radius: 10px 10px 10px 0;
+        margin-bottom: 6px;
+        display: inline-block;
+        font-weight: bold;
+    }
+}
+
+.country{
+    margin-bottom: 2px;
+    .country-content{
+        display: inline-block;
+    }
+    .flag{
+        float:left;
+        height: 52px;
+        border-radius: 0 0 0 10px;
+        overflow: hidden;
+        img{
+            display: block;
+            height: 100%;
+        }
+    }
+    .country-info{
+        float:right;
+        font-size: 19px;
+        line-height: 20px;
+        background: #fff;
+        border-radius: 0 12px 12px 0;
+        padding: 6px;
+        padding-right: 8px;
+        .country-name, .capital{
+            display: block;
+            color: #333;
+            font-weight: bold;
+        }
+        .capital{
+            color: #666;
+            //font-style: italic;
+            font-weight: normal;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "continents": [
+        {
+            "name": "Afrique",
+            "population": 1213,
+            "countries": [
+                {
+                    "name": "Maroc",
+                    "capital": "Rabat",
+                    "population": 36,
+                    "flag": "./flags/maroc.png"
+                },
+                {
+                    "name": "Algérie",
+                    "capital": "Alger",
+                    "population": 44,
+                    "flag": "./flags/algerie.png"
+                },
+                {
+                    "name": "Tunisie",
+                    "capital": "Tunis",
+                    "population": 12,
+                    "flag": "./flags/tunisia.png"
+                },
+                {
+                    "name": "Libye",
+                    "capital": "Tripoli",
+                    "population": 7,
+                    "flag": "./flags/libya.png"
+                },
+                {
+                    "name": "Égypte",
+                    "capital": "Le Caire",
+                    "population": 102,
+                    "flag": "./flags/egypt.png"
+                },
+                {
+                    "name": "Mauritanie",
+                    "capital": "Nouakchott",
+                    "population": 4,
+                    "flag": "./flags/mauritania.png"
+                },
+                {
+                    "name": "Mali",
+                    "capital": "Bamako",
+                    "population": 21,
+                    "flag": "./flags/mali.png"
+                },
+                {
+                    "name": "Niger",
+                    "capital": "Niamey",
+                    "population": 23,
+                    "flag": "./flags/niger.png"
+                },
+                {
+                    "name": "Tchad",
+                    "capital": "N'Djaména",
+                    "population": 17,
+                    "flag": "./flags/chad.png"
+                },
+                {
+                    "name": "Soudan",
+                    "capital": "Khartoum",
+                    "population": 43,
+                    "flag": "./flags/sudan.png"
+                },
+                {
+                    "name": "Érythrée",
+                    "capital": "Asmara",
+                    "population": 4,
+                    "flag": "./flags/eritrea.png"
+                },
+                {
+                    "name": "Djibouti",
+                    "capital": "Djibouti",
+                    "population": 1,
+                    "flag": "./flags/djibouti.png"
+                },
+                {
+                    "name": "Sénégal",
+                    "capital": "Dakar",
+                    "population": 16,
+                    "flag": "./flags/senegal.png"
+                },
+                {
+                    "name": "Gambie",
+                    "capital": "Banjul",
+                    "population": 2,
+                    "flag": "./flags/gambia.png"
+                },
+                {
+                    "name": "Guinée-Bissau",
+                    "capital": "Bissau",
+                    "population": 2,
+                    "flag": "./flags/guinea-bissau.png"
+                },
+                {
+                    "name": "Guinée",
+                    "capital": "Conakry",
+                    "population": 14,
+                    "flag": "./flags/guinea.png"
+                }
+            ]
+        },
+        {
+            "name": "Europe",
+            "population": 746,
+            "countries": [
+                {
+                    "name": "France",
+                    "capital": "Paris",
+                    "population": 68,
+                    "flag": "./flags/france.png"
+                },
+                {
+                    "name": "Espagne",
+                    "capital": "Madrid",
+                    "population": 50,
+                    "flag": "./flags/spain.png"
+                },
+                {
+                    "name": "Allemagne",
+                    "capital": "Berlin",
+                    "population": 83,
+                    "flag": "./flags/germany.png"
+                },
+                {
+                    "name": "Norvège",
+                    "capital": "Oslo",
+                    "population": 5,
+                    "flag": "./flags/norway.png"
+                },
+                {
+                    "name": "Suède",
+                    "capital": "Stockholm",
+                    "population": 10,
+                    "flag": "./flags/sweden.png"
+                }
+            ]
+        }
+    ]
+}
