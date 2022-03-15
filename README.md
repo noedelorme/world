@@ -1,2 +1,2 @@
-# NER Template
-NodeJS, Express, React template. Start cosily a React project.
+# React website to learn the world
+Learn all the country of the world with capitals, flags and number of inhabitants.
