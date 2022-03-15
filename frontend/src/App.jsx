@@ -31,7 +31,7 @@ function Continent(props){
 
 function App() {
   return (
-    <div className="list">
+    <div id="list" className="list">
       {world.continents.map((item, index) => {
         return <Continent key={index} continent={item} />;
       })}

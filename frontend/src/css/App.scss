@@ -1,7 +1,16 @@
 .list{
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 999;
+    &.hidded{
+        display: none;
+    }
+}
+.list::-webkit-scrollbar {
+    display: none;
 }
 
 .continent{
