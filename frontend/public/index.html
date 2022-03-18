@@ -4,54 +4,24 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-react-app"/>
+    <meta name="description" content="A website to learn the world"/>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
     
-    <title>Title</title>
+    <title>Learn the world</title>
   </head>
   <body>
 
-    <div id="map"></div>
-    <script>
-      var map = L.map('map',{
-        center: [46.2624018, 14.7626462],
-        zoom: 5
-      });
+    <div id="root"></div>
 
-      L.tileLayer('https://maptiles.p.rapidapi.com/fr/map/v1/{z}/{x}/{y}.png?rapidapi-key=19d1149902mshca48d2fa3b42fd0p11d1afjsn873eaa47dda2', {
-        attribution: 'Tiles &copy: <a href="https://www.maptilesapi.com/">MapTiles API</a>, Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19
-      }).addTo(map);
-    </script>
+    <div id="map"></div>
+    <div id="lister"><i class="fas fa-sort-amount-down"></i></div>
     <style>
       html, body, #map{
         height: 100%;
       }
-      .leaflet-control-zoom, .leaflet-control-attribution{
-        display: none;
-      }
-    </style>
-
-    <div id="root"></div>
-
-    <div id="lister"><i class="fas fa-sort-amount-down"></i></div>
-    <script>
-      document.getElementById("lister").addEventListener("click", function(e){
-        document.getElementById("list").classList.toggle("hidded");
-      });
-    </script>
-    <style>
       #lister{
         width: 40px;
         height: 40px;
@@ -77,7 +47,26 @@
       #lister:hover{
         cursor: pointer;
       }
+      .gmnoprint, .gm-control-active{
+        display: none;
+      }
     </style>
+    <script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 5.75,
+          minZoom: 3,
+          maxZoom: 7,
+          center: { lat: 47.617437, lng: 14.2038137 },
+        });
+      }
+
+      document.getElementById("lister").addEventListener("click", function(e){
+        document.getElementById("list").classList.toggle("hidded");
+      });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCttYkorJX2lcr86euGdYI4HU7ix0HTG0k&callback=initMap&v=weekly" async></script>
+
     <script src="https://kit.fontawesome.com/e926384c02.js" crossorigin="anonymous"></script>
 
   </body>
