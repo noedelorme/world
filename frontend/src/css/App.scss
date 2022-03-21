@@ -61,3 +61,25 @@
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .continent{
+        .continent-name{
+            font-size: 17px;
+            padding: 4px 7px;
+        }
+    }
+    .country{
+        .flag{
+            height: 30px;
+            border-radius: 0 0 0 10px;
+        }
+        .country-info{
+            font-size: 12px;
+            line-height: 13px;
+            border-radius: 0 12px 12px 0;
+            padding: 2px;
+            padding-right: 8px;
+        }
+    }
+}

@@ -19,12 +19,8 @@ app.use(bodyParser.json());
 /**************************************
   ROOTER SYSTEM
 **************************************/
-app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, '../frontend/build/', 'index.html'));
-});
-
 app.get('*', function(req, res){
-  res.send('404');
+  res.sendFile(path.join(__dirname, '../frontend/build/', 'index.html'));
 });
 
 app.listen(config.port, config.adress);
